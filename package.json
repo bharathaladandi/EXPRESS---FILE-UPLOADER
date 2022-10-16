@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bharathaladandi/EXPRESS---FILE-UPLOADER/issues"
   },
-  "homepage": "https://github.com/bharathaladandi/EXPRESS---FILE-UPLOADER#readme"
+  "homepage": "https://github.com/bharathaladandi/EXPRESS---FILE-UPLOADER#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
