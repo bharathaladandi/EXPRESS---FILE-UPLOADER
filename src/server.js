@@ -1,6 +1,7 @@
 const express  = require('express');
 const multer = require('multer');
 
+
 const app = express()
 
 
@@ -16,7 +17,12 @@ const storage = multer.diskStorage({
   
   const upload = multer({ storage: storage })
 
+  app.post("/single", upload.single("image"), (req, res) =>{
+    console.log(req.file);
+    res.send("single file uploaded successfully");
+  });
 
+  
 
 app.listen(8000, ()=>{
     console.log('listening on http://localhost:8000');
