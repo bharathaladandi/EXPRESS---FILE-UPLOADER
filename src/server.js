@@ -23,6 +23,11 @@ const storage = multer.diskStorage({
   });
 
   
+app.post("/multiple", upload.array("images"), (req, res) => {
+    console.log(req.file);
+    res.send("multiple file uploaded successfully");
+  
+  })
 
 app.listen(8000, ()=>{
     console.log('listening on http://localhost:8000');
